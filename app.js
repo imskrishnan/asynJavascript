@@ -1,7 +1,13 @@
+//synchronous javascript
+
+const anotherFunction = () => {
+  console.log('Inside another function..');
+  console.log('Do something!');
+};
+
 console.log('Start');
 
-setInterval(() => {
-  console.log(new Date().toLocaleTimeString());
-}, 1000);
+//calling anotherFunction()
+anotherFunction();
 
-console.log('End!');
+console.log('End');
